@@ -95,20 +95,3 @@ footer {
   position: fixed;
   text-align: center;
 }
-
-.content .footer-color a {
-  border: 1px solid #FFF(255, 255, 255, 0.125);
-  color: #FFF;
-  outline: none;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  transition: 0.3s all;
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-}
-
-.content .footer-color a:hover {
-  transition: 0.3s all;
-  background-color: #fff;
-} 
