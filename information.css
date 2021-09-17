@@ -1,106 +1,114 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+body{
+  align-items: center;
+  background: #2e3141;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body {
+  color: white;
   display: flex;
   justify-content: center;
-  height: 150vh;
   align-items: center;
-  background: linear-gradient(to right, #4b79a1, #283e51);
+  flex-wrap: wrap;
+  min-height: 90vh;
 }
-.card {
-  width: 800px;
-  height: 600px;
-  background: rgba(255, 255, 255, 1);
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
-  position: relative;
+
+section {
   align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
-  border-radius: 15px;
-}
-.card .img_box {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: -60px;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  border: 5px solid #c05299;
-}
-.card .img_box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.card .information {
-  margin-top: 50px;
-}
-.card .information h1 {
-  font-size: 30px;
-  color: rgba(42, 42, 42, 0.9);
-}
-.card .information h2 {
-  font-size: 23px;
-  color: rgba(42, 42, 42, 0.7);
-}
-.card .information h2 span {
-  color: rgba(192, 82, 153, 0.6);
-  font-size: 27px;
-}
-.card .information h3 i {
-  color: rgba(42, 42, 42, 1);
-  margin-right: 8px;
-}
-.card .information h3 {
-  margin-top: 10px;
-  font-size: 20px;
-  color: rgba(42, 42, 42, 0.6);
-}
-.card .number {
-  margin: 50px 0;
-  display: flex;
+  position: relative;
   justify-content: center;
-}
-.card .number .bloc {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 60px;
 }
-.card .number .bloc h5 {
-  font-size: 28px;
-  color: rgba(42, 42, 42, 0.8);
-}
-.card .social {
-  display: flex;
-  justify-content: center;
-}
-.card .social a.follow {
-  margin: 0 40px;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
+
+.container {
+  width: 300px;
+  height: 400px;
+  background: #353849;
   align-items: center;
-  display: flex;
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 22px rgba(0, 0, 0, 0.09);
+  margin: 20px;
   justify-content: center;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  display: flex;
 }
-.card .social a.follow:hover {
-  transform: scale(0.8); /* Augmenter pour agrandir a la place de rétrecir*/
+
+.container .imgBox img {
+  border-radius: 100px;
+  border: 10px solid rgba(0,0,0,0.25);
+  width: 130px;
+  height: 130px;
 }
-.card .social .follow i {
+
+.container .text {
+  text-align: center;
+}
+
+.container .media .fa-twitter{
+  color: white;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: 40px;
+  text-align: center;
   font-size: 25px;
-  color: #ffffff;
+  padding: 5px 5px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+}
+
+.container .media .fa-instagram{
+  color: white;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: 40px;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 5px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+}
+
+.container .media .fa-twitter:hover{
+  background-color: #00aced;
+  border-radius: 5px;
+}
+
+.container .media .fa-instagram:hover{
+  background-color: #d6249f;
+  border-radius: 5px;
+  /* background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+}
+
+footer {
+  background-color: #353849;
+  color: #EEE;
+  padding: 20px;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.content .footer-color a {
+  border: 1px solid #FFF(255, 255, 255, 0.125);
+  color: #FFF;
+  outline: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s all;
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.content .footer-color a:hover {
+  transition: 0.3s all;
+  background-color: #fff;
 }
